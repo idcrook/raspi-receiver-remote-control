@@ -47,3 +47,6 @@ TXD - GPIO 14
 SCL - R1: GPIO 1, R2: GPIO 3
 SDA - R1: GPIO 0, R2: GPIO 2
 ```
+
+- https://pinout.xyz/pinout/pin15_gpio22 Wiring pin 3
+- https://pinout.xyz/pinout/pin16_gpio23 Wiring pin 4
