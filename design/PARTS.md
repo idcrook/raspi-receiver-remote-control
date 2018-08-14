@@ -3,11 +3,6 @@
 ## Summary
 
 
-- T-type breakout for solderless breadboard (from Pi)
-    ```
-    P3 - GPIO 22
-    P4 - GPIO 23
-    ```
 - Three long lengths of Hookup wire (22 or 24 gauge)
   - goes between IR LED transmitter circuit on mini breadboard from Pi breakout
 - Mini solderless breadboard
@@ -15,6 +10,11 @@
   - 10kΩ resistor
   - On Semi P2N2222 NPN transistor
   - various short solderless breadboard jumper wires
+- T-type breakout for solderless breadboard (from Pi)
+    ```
+    P3 - GPIO 22
+    P4 - GPIO 23
+    ```
 
 #### Breakout Kit for Raspberry Pi B with 40pin to 26pin Cable
 

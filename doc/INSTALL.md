@@ -42,7 +42,7 @@ sudo service lircd restart
 sudo journalctl -u lircd
 irsend SEND_ONCE RM-AAU190 SA-CD/CD
 irsend SEND_ONCE RM-AAU190 VOLUME_UP
-irsend --count=2 SEND_ONCE RM-AAU190 VOLUME_UPg
+irsend --count=2 SEND_ONCE RM-AAU190 VOLUME_UP
 irsend SEND_ONCE RM-AAU190 POWER
 ```
 
