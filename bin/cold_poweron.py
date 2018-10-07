@@ -11,6 +11,7 @@ import subprocess
 import time
 
 CODE_SOURCE_RASPI = 'SA-CD/CD'
+CODE_SOURCE_MEDIAPC = 'SAT/CATV'
 CODE_POWER = 'POWER'
 REMOTE_NAME = 'RM-AAU190'
 
@@ -29,7 +30,7 @@ def irsend(remote_code, remote_name=REMOTE_NAME, count=None):
 def power_on_switch_to_raspi():
     irsend(CODE_POWER)
     time.sleep(10)
-    irsend(CODE_SOURCE_RASPI, count=2)
+    irsend(CODE_SOURCE_MEDIAPC, count=2)
 
 
 if __name__ == '__main__':
