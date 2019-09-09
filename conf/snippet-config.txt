@@ -1,2 +1,5 @@
-# configure LIRC overlay, for BCM 22 (header15) / BCM 23 (header16)
-dtoverlay=lirc-rpi,gpio_out_pin=22,gpio_in_pin=23
+# configure LIRC overlay, for TX BCM 22 (header15) / BCM 23 (header16)
+#dtoverlay=lirc-rpi,gpio_out_pin=22,gpio_in_pin=23
+#dtoverlay=gpio-ir,gpio_pin=23
+dtoverlay=gpio-ir-tx,gpio_pin=22
+# dtoverlay=pwm-ir-tx,gpio_pin=18

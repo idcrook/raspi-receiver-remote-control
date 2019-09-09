@@ -1,0 +1,2 @@
+#! /bin/sh
+exec /usr/bin/irsend --device=/var/run/lirc/lircd-tx "$@"
