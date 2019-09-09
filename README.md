@@ -22,8 +22,10 @@ Original motivation for this project was to be able to control a Sony stereo rec
 
 ### Homebridge or MQTT, or both, or none?
 
-I use the excellent [shairport-sync](https://github.com/mikebrady/shairport-sync) project to fill house with sound using many Raspberry Pi's as Airplay receivers. It has under-development a way to integrate "metadata and/or controls" into an MQTT interface.
+I use the excellent [shairport-sync](https://github.com/mikebrady/shairport-sync) project to fill house with sound using many Raspberry Pi's as Airplay receivers. It has added MQTT support for both track metadata and remote controls (for the Airplay source)
 
-I also use the [homebridge](https://github.com/nfarina/homebridge) project that provides support of multiple "unsupported" home automation projects into HomeKit.
+-	[shairport-sync-mqtt-display](https://github.com/idcrook/shairport-sync-mqtt-display)
 
-I will try to remember to check back in here with anything clever I can share.
+I also use the [homebridge](https://github.com/nfarina/homebridge) project that provides support of multiple "unsupported" home automation projects into HomeKit. A while ago made it so I could turn on and off using Siri in this [blog post](https://idcrook.github.io/siri-shortcut-controlled-ir-remote-for-home-receiver-using-a-raspberry-pi/).
+
+Some IR RC commands for other remotes : https://github.com/idcrook/homespun_lirc_codes
