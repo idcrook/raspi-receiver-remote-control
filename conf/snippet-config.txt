@@ -5,10 +5,11 @@ dtoverlay=gpio-ir-tx,gpio_pin=22
 dtoverlay=gpio-ir,gpio_pin=23
 # dtoverlay=pwm-ir-tx,gpio_pin=18
 
-# Disable the ACT LED.
-dtparam=act_led_trigger=none
-dtparam=act_led_activelow=off
+# Should work on Pi B+ or 2B
+# # Disable the ACT LED. (GPIO-47)
+# dtparam=act_led_trigger=none
+# dtparam=act_led_activelow=off
 
-# Disable the PWR LED.
-dtparam=pwr_led_trigger=none
-dtparam=pwr_led_activelow=off
+# # Disable the PWR LED. (GPIO-35)
+# dtparam=pwr_led_trigger=none
+# dtparam=pwr_led_activelow=off

@@ -75,16 +75,12 @@ sudo cp -v conf/RM-AAU190.lircd.conf /etc/lirc/lircd.conf.d/
 sudo service lircd restart
 sudo journalctl -u lircd
 
-#sudo cp -v conf/irsend /usr/local/bin/irsend
-#sudo chmod +x /usr/local/bin/irsend
-#which irsend
-# /usr/local/bin/irsend
+irsend LIST RM-AAU190 ""
+
 irsend SEND_ONCE RM-AAU190 SA-CD/CD
 irsend SEND_ONCE RM-AAU190 VOLUME_UP
 irsend --count=2 SEND_ONCE RM-AAU190 VOLUME_UP
 irsend SEND_ONCE RM-AAU190 POWER
-
-irsend LIST RM-AAU190 ""
 ```
 
 Troubleshooting
@@ -100,21 +96,23 @@ sudo cat /sys/kernel/debug/gpio
 gpiochip0: GPIOs 0-53, parent: platform/3f200000.gpio, pinctrl-bcm2835:
  gpio-22  (                    |gpio-ir-transmitter@) out lo
  gpio-23  (                    |ir-receiver@17      ) in  hi IRQ
+ ...
 ```
 
 ### hardware does not support sending
 
 ```
 $ irsend SEND_ONCE RM-AAU190 SA-CD/CD
+```
 
-hardware does not support sending
-Error running command: Input/output error
+```
+hardware does not support sending Error running command: Input/output error
 ```
 
 in `lirc_options.conf`
 
 ```
-driver     = default
+driver = default
 ```
 
 if driver is `devinput` we cannot use to send IR.
