@@ -1,5 +1,14 @@
-# configure LIRC overlay, for TX BCM 22 (header15) / BCM 23 (header16)
-#dtoverlay=lirc-rpi,gpio_out_pin=22,gpio_in_pin=23
-#dtoverlay=gpio-ir,gpio_pin=23
+# configure IR overlays
+# - for TX BCM 22 (header pin 15) (WiringPi 3)
+# - for RX BCM 23 (header pin 16) (WiringPi 4)
 dtoverlay=gpio-ir-tx,gpio_pin=22
+dtoverlay=gpio-ir,gpio_pin=23
 # dtoverlay=pwm-ir-tx,gpio_pin=18
+
+# Disable the ACT LED.
+dtparam=act_led_trigger=none
+dtparam=act_led_activelow=off
+
+# Disable the PWR LED.
+dtparam=pwr_led_trigger=none
+dtparam=pwr_led_activelow=off
